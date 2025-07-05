@@ -1,0 +1,73 @@
+body {
+    font-family: 'Your Selected Font', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: 
+        linear-gradient(to right, rgba(0, 4, 40, 0.7), rgba(0, 78, 146, 0.7)), /* Gradient overlay */
+        url('images/backgroung.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Cover the entire viewport */
+    color: #ffffff; /* White text color for better contrast */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul {
+    display: flex; /* Ensure the links are in a horizontal line */
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px; /* Space between links */
+}
+
+nav a {
+    text-decoration: none;
+    color: #00aaff; /* Light blue link color */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    color: #ffffff; /* Change color on hover */
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background for main content */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+    border: 1px solid #333; /* Dark border for cards */
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #1a1a1a; /* Dark background for cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    color: #ffffff; /* White text color for card content */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
