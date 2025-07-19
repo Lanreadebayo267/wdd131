@@ -1,5 +1,5 @@
-const temp = 28; // in Celsius
-const speed = 15; // in km/h
+const temp = 28; // Celsius
+const speed = 15; // km/h
 
 function calculateWindChill(t, s) {
   return (
@@ -8,13 +8,12 @@ function calculateWindChill(t, s) {
 }
 
 function displayWindChill() {
-  let chill = "N/A";
+  const chillEl = document.getElementById("chill");
   if (temp <= 10 || speed <= 4.8) {
-    chill = "N/A";
+    chillEl.textContent = "N/A";
   } else {
-    chill = `${calculateWindChill(temp, speed)} °C`;
+    chillEl.textContent = `${calculateWindChill(temp, speed)} °C`;
   }
-  document.getElementById("chill").textContent = chill;
 }
 
 function displayFooter() {

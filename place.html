@@ -1,50 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about Nigeria - weather, culture, and facts.">
-    <title>Nigeria | Country Page</title>
-    <link rel="stylesheet" href="styles/place.css">
-    <script defer src="scripts/place.js"></script> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn about Nigeria - weather, culture, and facts." />
+  <title>Nigeria | Country Page</title>
+  <meta name="author" content="Olanrewaju Adebayo">
+  <link rel="stylesheet" href="styles/place.css" />
+  <script defer src="scripts/place.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Explore Nigeria</h1>
-    </header>
+  <header>
+    <h1>Explore Nigeria</h1>
+  </header>
 
-    <main>
-        <section class="hero">
-            <picture>
-                <source srcset="images/nigeria-hero-large.webp" media="(min-width: 600px)">
-                <img src="images/nigeria-hero-small.webp" alt="Lagos skyline at sunset">
-            </picture>
-        </section>
+  <main id="main-content" role="main">
+    <section class="hero" aria-label="Nigeria Hero Image">
+      <picture>
+        <source srcset="images/nigeria-hero-large.webp" media="(min-width: 600px)">
+        <img src="images/nigeria-hero-small.webp" alt="Skyline of Lagos, Nigeria at sunset" width="100%" height="auto" loading="lazy">
+      </picture>
+    </section>
 
-        <section class="data">
-            <h2>Facts About Nigeria</h2>
-            <ul>
-                <li>Capital: Abuja</li>
-                <li>Population: Over 220 million</li>
-                <li>Currency: Naira (₦)</li>
-                <li>Major Language: English</li>
-            </ul>
-        </section>
+    <section class="data" aria-label="Facts About Nigeria">
+      <h2>Facts About Nigeria</h2>
+      <ul>
+        <li><strong>Capital:</strong> Abuja</li>
+        <li><strong>Population:</strong> Over 220 million</li>
+        <li><strong>Currency:</strong> Naira (₦)</li>
+        <li><strong>Major Language:</strong> English</li>
+      </ul>
+    </section>
 
-        <section class="weather">
-            <h2>Weather <span class="emoji"></span></h2>
-            <div class="icon">
-                <img src="images/cloudy.svg" alt="Cloudy icon">
-            </div>
-            <p>Temperature: <span id="temp">28</span>°C</p>
-            <p>Wind Speed: <span id="speed">15</span> km/h</p>
-            <p>Wind Chill: <span id="chill"></span></p>
-        </section>
-    </main>
+    <section class="weather" aria-label="Weather Information">
+      <h2>Weather <span class="emoji"></span></h2>
+      <div class="icon">
+        <img src="images/cloudy.svg" alt="Cloudy weather icon" width="50" height="50" />
+      </div>
+      <p>Temperature: <span id="temp">28</span>°C</p>
+      <p>Wind Speed: <span id="speed">15</span> km/h</p>
+      <p>Wind Chill: <span id="chill">Calculating...</span></p>
+    </section>
+  </main>
 
-    <footer>
-        <p>&copy; <span id="year"></span> Nigeria Explorer</p>
-        <p>Last Modified: <span id="lastModified"></span></p>
-    </footer>
+  <footer>
+    <p>&copy; <span id="year"></span> Nigeria Explorer</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+    <p>Author: <span id="author">Olanrewaju Adebayo</span></p>
+  </footer>
 </body>
 </html>
