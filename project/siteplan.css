@@ -1,0 +1,60 @@
+/* siteplan.css */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #FAF3E0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #228B22;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.color-sample {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+}
+
+.color-sample.green {
+  background-color: #228B22;
+}
+
+.color-sample.sand {
+  background-color: #FAF3E0;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #228B22;
+  color: white;
+}
