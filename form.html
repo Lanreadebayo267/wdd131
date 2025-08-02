@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Review Form</title>
+  <link rel="stylesheet" href="styles/form.css" />
+  <script defer src="scripts/form.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Product Review Form</h1>
+  </header>
+
+  <main>
+    <form action="review.html" method="get">
+      <!-- Product Name -->
+      <label for="productName">Product Name<span>*</span></label>
+      <select id="productName" name="productName" required>
+        <option value="" disabled selected>Select a Product ...</option>
+        <!-- Dynamic options added by JavaScript -->
+      </select>
+
+      <!-- Overall Rating -->
+      <fieldset>
+        <legend>Overall Rating<span>*</span></legend>
+        <label><input type="radio" name="rating" value="1" required /> ☆</label>
+        <label><input type="radio" name="rating" value="2" /> ☆☆</label>
+        <label><input type="radio" name="rating" value="3" /> ☆☆☆</label>
+        <label><input type="radio" name="rating" value="4" /> ☆☆☆☆</label>
+        <label><input type="radio" name="rating" value="5" /> ☆☆☆☆☆</label>
+      </fieldset>
+
+      <!-- Date of Installation -->
+      <label for="installDate">Date of Installation<span>*</span></label>
+      <input type="date" id="installDate" name="installDate" required />
+
+      <!-- Useful Features -->
+      <fieldset>
+        <legend>Useful Features</legend>
+        <label><input type="checkbox" name="features" value="tasty" /> Tasty</label>
+        <label><input type="checkbox" name="features" value="crispy" /> Crispy</label>
+        <label><input type="checkbox" name="features" value="longShelfLife" /> Long Shelf Life</label>
+      </fieldset>
+
+      <!-- Written Review -->
+      <label for="reviewText">Your Review</label>
+      <textarea id="reviewText" name="reviewText" rows="5" placeholder="Share your thoughts..."></textarea>
+
+      <!-- User Name -->
+      <label for="username">Your Name</label>
+      <input type="text" id="username" name="username" placeholder="Optional" />
+
+      <!-- Submit Button -->
+      <input type="submit" value="Submit Review" />
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Olanrewaju Adebayo | WDD 131</p>
+  </footer>
+</body>
+</html>
