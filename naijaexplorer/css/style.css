@@ -1,0 +1,60 @@
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #FAF3E0;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #228B22;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: Montserrat, sans-serif;
+}
+
+nav a.active {
+    border-bottom: 2px solid white;
+}
+
+main {
+    padding: 1rem;
+}
+
+section.hero {
+    text-align: center;
+}
+
+footer {
+    background-color: #228B22;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 500px;
+    margin: auto;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
